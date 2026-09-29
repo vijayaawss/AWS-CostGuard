@@ -27,7 +27,7 @@ The system:
 ## 🏗️ Architecture
 
 
-![AWS Architecture Overview](imgs/Architecture-Diagram.png)
+![AWS Architecture Overview](imgs/Architecture-Daigram.png)
 
 ---
 
@@ -38,7 +38,7 @@ The system:
 ![CostGuard Dashboard](imgs/dashboard.png)
 
 ### S3 Reports
-![S3 Storage](imgs/s3.png)
+![S3 Storage](imgs/S3.png)
 
 ### SNS
 
@@ -105,15 +105,23 @@ The system:
 9. Amazon SNS sends a short scan summary notification.
 10. EventBridge Scheduler can trigger the same scanning process automatically.
 
-## 🧩 Challenges Faced
-Connecting the local Flask dashboard with AWS Lambda.
-Handling Lambda response data for the Flask dashboard.
-Retrieving EC2 CPU utilization data from CloudWatch.
-Including S3 bucket and object information in the scan.
-Configuring IAM permissions for EC2, CloudWatch, S3, and SNS.
-Setting up EventBridge Scheduler to trigger Lambda automatically.
-Handling missing CloudWatch datapoints without stopping the complete scan.
-Configuring SNS notifications after successful scans.
+
+## 🛠️ Troubleshooting
+
+- **`COSTGUARD_LAMBDA_FUNCTION` error**  
+  Set the environment variable in the same terminal before starting Flask.
+
+- **Flask returns `502`**  
+  Check the Lambda function name, AWS region, `lambda:InvokeFunction` permission, and Lambda logs.
+
+- **Lambda reports `AccessDenied`**  
+  Check the Lambda execution role and verify the required EC2, CloudWatch, S3, and SNS permissions.
+
+- **Scan succeeds but no email arrives**  
+  Confirm the SNS email subscription has been confirmed and verify the topic ARN and AWS region.
+
+- **EventBridge scan does not run**  
+  Check the schedule state, time zone, target Lambda ARN, and Scheduler role's `lambda:InvokeFunction` permission.
 
 
 
@@ -174,15 +182,6 @@ Open:
 http://127.0.0.1:5000
 ```
 
----
-
-## 🔐 Security
-
-AWS credentials are not stored inside the project source code.
-
-The project uses the AWS credential configuration available to the local AWS environment, while sensitive files and generated scan outputs are excluded from Git tracking.
-
----
 
 ## 🚀 Future Enhancements
 
