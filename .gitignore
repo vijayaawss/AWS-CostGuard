@@ -1,0 +1,9 @@
+response.json
+.env
+.env.*
+*.pem
+.aws/
+__pycache__/
+*.pyc
+venv/
+.venv/
