@@ -36,18 +36,23 @@ The system:
 ### CostGuard Dashboard
 
 ![CostGuard Dashboard](imgs/dashboard.png)
-
+---
 ### S3 Reports
 ![S3 Storage](imgs/S3.png)
-
+---
 ### SNS
 
 ![SNS Notification](imgs/sns.png)
-
+---
 ### EventBridge Scheduler
 
 ![EventBridge Scheduler](imgs/eventbridge.png)
+---
+### Lambda
 
+![Lambda Scanner](imgs/lambda.png)
+
+---
 ## ✨ Key Features
 
 * 🔍 **EC2 Resource Scanning**
