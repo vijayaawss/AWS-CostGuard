@@ -7,20 +7,23 @@ The application uses AWS Lambda as the main scanning engine and integrates with 
 
 ## 🎯 Project Objective
 
-The goal of AWS CostGuard is to provide a simple way to monitor AWS resource usage and identify possible areas of cost optimization.
+## 🎯 Objective
 
-The system:
+The goal of **AWS CostGuard** is to provide a simple and automated way to monitor AWS resource usage, identify underutilized resources, and highlight potential cost-saving opportunities.
+The system scans AWS resources, analyzes their usage, generates cost optimization insights, and delivers reports and notifications automatically.
 
-* Scans EC2 instances and their current state
-* Monitors EC2 CPU utilization using CloudWatch
-* Reviews EBS volumes and storage usage
-* Reviews S3 bucket storage
-* Identifies stopped and underutilized resources
-* Estimates potential monthly savings
-* Stores scan reports in Amazon S3
-* Sends scan summaries through Amazon SNS
-* Automatically runs scheduled scans using EventBridge Scheduler
-* Displays scan results through a Flask dashboard
+## ✨ Key Features
+
+* 🔍 **EC2 Resource Scanning** – Checks EC2 instances and their current state.
+* 📊 **CPU Utilization Monitoring** – Monitors EC2 CPU usage using Amazon CloudWatch.
+* 💾 **EBS Storage Analysis** – Reviews EBS volumes and storage usage.
+* 🪣 **S3 Storage Review** – Analyzes S3 bucket storage.
+* 💰 **Estimated Monthly Savings** – Estimates potential savings from unused or underutilized resources.
+* 💡 **Cost Optimization Recommendations** – Identifies resources that may be optimized.
+* 📄 **Automatic JSON Reports** – Generates and stores scan reports in Amazon S3.
+* 📧 **SNS Notifications** – Sends scan summaries through Amazon SNS.
+* ⏰ **Scheduled Automated Scans** – Runs scans automatically using EventBridge Scheduler.
+* 🖥️ **Flask Dashboard** – Displays scan results through a simple Flask dashboard.
 
 ---
 
@@ -48,18 +51,6 @@ The system:
 | **AWS Lambda** | ![Lambda Scanner](imgs/lmbda.png) |
 
 ---
-## ✨ Key Features
-
-* 🔍 **EC2 Resource Scanning**
-* 📊 **CPU Utilization Monitoring**
-* 💾 **EBS Storage Analysis**
-* 🪣 **S3 Storage Review**
-* 💰 **Estimated Monthly Savings**
-* 💡 **Cost Optimization Recommendations**
-* 📄 **Automatic JSON Scan Reports**
-* 📧 **SNS Scan Notifications**
-* ⏰ **Scheduled Automated Scans**
-* 🖥️ **Local Flask Dashboard**
 
 ---
 
