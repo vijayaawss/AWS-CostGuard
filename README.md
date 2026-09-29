@@ -33,13 +33,21 @@ The system:
 
 ## 🛠️ AWS Services & Screenshots
 
-| AWS Service | Screenshot |
-|-------------|------------|
-| **CostGuard Dashboard** | ![CostGuard Dashboard](imgs/dashboard.png) |
-| **Amazon S3** | ![S3 Storage](imgs/S3.png) |
-| **Amazon SNS** | ![SNS Notification](imgs/sns.png) |
-| **EventBridge Scheduler** | ![EventBridge Scheduler](imgs/eventbridge.png) |
-| **AWS Lambda** | ![Lambda Scanner](imgs/lmbda.png) |
+---
+ 
+### CostGuard Dashboard
+
+![CostGuard Dashboard](imgs/dashboard.png)
+
+### AWS Services
+
+| Amazon S3 | Amazon SNS |
+|-----------|------------|
+| ![S3](imgs/S3.png) | ![SNS](imgs/sns.png) |
+
+| EventBridge Scheduler | AWS Lambda |
+|-----------------------|------------|
+| ![EventBridge](imgs/eventbridge.png) | ![Lambda](imgs/lmbda.png) |
 
 ---
 ## ✨ Key Features
