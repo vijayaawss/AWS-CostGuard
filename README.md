@@ -7,8 +7,6 @@ The application uses AWS Lambda as the main scanning engine and integrates with 
 
 ## 🎯 Project Objective
 
-## 🎯 Objective
-
 The goal of **AWS CostGuard** is to provide a simple and automated way to monitor AWS resource usage, identify underutilized resources, and highlight potential cost-saving opportunities.
 The system scans AWS resources, analyzes their usage, generates cost optimization insights, and delivers reports and notifications automatically.
 
@@ -52,7 +50,7 @@ The system scans AWS resources, analyzes their usage, generates cost optimizatio
 
 ---
 
----
+
 
 ## 🛠️ AWS Services Used
 
